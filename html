@@ -1,0 +1,45 @@
+<!-- Main Arcade Interface Grid -->
+<div class="game-grid" id="gameGrid">
+    
+    <!-- Game 1: Duck Life (Loads via HTMLPreview from Community Repository) -->
+    <div class="game-card" data-title="duck life">
+        <div class="card-thumb thumb-duck">🐥</div>
+        <div class="card-info">
+            <h3>Duck Life</h3>
+            <p>Pulling engine dependencies directly from mountjustin's live repository.</p>
+            <span class="tag">Strategy / Simulation</span>
+            <button class="launch-btn" onclick="launchGame('https://github.io')">Launch Engine</button>
+        </div>
+    </div>
+
+    <!-- Game 2: Big Tower Tiny Square (Loads via HTMLPreview from Community Repository) -->
+    <div class="game-card" data-title="big tower tiny square">
+        <div class="card-thumb thumb-tower">🔲</div>
+        <div class="card-info">
+            <h3>Big Tower Tiny Square</h3>
+            <p>Pulling physics engine elements directly from mountain658's source files.</p>
+            <span class="tag">Platformer</span>
+            <button class="launch-btn" onclick="launchGame('https://github.io')">Launch Engine</button>
+        </div>
+    </div>
+
+    <!-- Game 3: PolyTrack (Loads community track engine from official branch) -->
+    <div class="game-card" data-title="polytrack">
+        <div class="card-thumb thumb-track">🏎️</div>
+        <div class="card-info">
+            <h3>PolyTrack</h3>
+            <p>Pulling 3D track environment directly from polytrackfree's distribution branch.</p>
+            <span class="tag">Racing / Physics</span>
+            <button class="launch-btn" onclick="launchGame('https://polytrackfree.github.io/')">Launch Engine</button>
+        </div>
+    </div>
+
+</div>
+
+<!-- The Interactive Game Player Screen (Pop-up overlay) -->
+<div id="gameModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeGame()">&times; Close Game</span>
+        <iframe id="gameFrame" src="" width="100%" height="100%" allowfullscreen></iframe>
+    </div>
+</div>
